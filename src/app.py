@@ -4,8 +4,8 @@ import numpy as np
 import joblib
 
 # Load the saved model
-ingred_matrix = joblib.load("ingred_matrix.pkl")
-data = pd.read_csv("products.csv")
+ingred_matrix = joblib.load("../model/ingred_matrix.pkl")
+data = pd.read_csv("../data/products.csv")
 
 # Initialize FastAPI app
 app = FastAPI(title="Product Recommendation API")
