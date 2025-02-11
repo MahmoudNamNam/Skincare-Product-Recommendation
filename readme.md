@@ -11,6 +11,7 @@ pip install -r requirements.txt
 ### 1. Start the API
 
 ```bash
+cd src
 python app.py
 ```
 
