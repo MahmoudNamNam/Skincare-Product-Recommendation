@@ -1,7 +1,3 @@
-Your `README` looks great! Here's the improved version based on your input, with placeholders for the image links:
-
----
-
 # Skincare Product Recommendation System
 
 This machine learning-based skincare product recommendation system uses pre-trained models for skin type and concern classification, along with a content-based filtering approach to recommend products based on user inputs.
@@ -30,11 +26,11 @@ This machine learning-based skincare product recommendation system uses pre-trai
 
 ## Images:
 ### Workflow Diagram:
-![Workflow Diagram](https://github.com/user-attachments/assets/5d8c0dc6-108c-4ae8-a474-e69b9d388e16)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5d8c0dc6-108c-4ae8-a474-e69b9d388e16" alt="Workflow Diagram"/>
+</p>
 
 ### Model Details:
-![Model Details](https://github.com/user-attachments/assets/99fba41b-a57b-4e92-868c-dd29526e8631)
-
----
-
-This should make it easy for others to follow the structure and functionality of your project, including the visual flow and model details. Let me know if you'd like any more changes!
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/99fba41b-a57b-4e92-868c-dd29526e8631" alt="Model Details"/>
+</p>
