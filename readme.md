@@ -1,53 +1,40 @@
-# Skincare Product Recommendation
+Your `README` looks great! Here's the improved version based on your input, with placeholders for the image links:
 
-## Install Dependencies
+---
 
-```bash
-pip install -r requirements.txt
-```
+# Skincare Product Recommendation System
 
-## Running the API
+This machine learning-based skincare product recommendation system uses pre-trained models for skin type and concern classification, along with a content-based filtering approach to recommend products based on user inputs.
 
-### 1. Start the API
+## Technologies Used:
+- **ResNet-50/101** for skin type and concern prediction.
+- **PyTorch** for model inference.
+- **Streamlit** for the web interface.
+- **Pandas & Scikit-learn** for data processing and recommendation algorithms.
+- **TF-IDF Vectorization** for ingredient-based similarity.
 
-```bash
-cd src
-python app.py
-```
+## Features:
+- **Skin Type Prediction**: Given an image of the user's skin, the model predicts whether the skin is Oily, Dry, or Normal.
+- **Concern Prediction**: The model detects common skin concerns such as Acne, Bags, Redness, etc., from the uploaded skin image.
+- **Product Recommendation**: Based on the predicted skin type and concerns, the system recommends skincare products using a combination of cosine similarity based on skin type, concerns, and ingredients.
 
-The API will be available at: `http://127.0.0.1:8000`
+## App Usage:
+1. Upload an image of your skin.
+2. The app will predict your skin type and concerns.
+3. Based on the predictions, the system will recommend top skincare products with links to more details.
 
-### 2. Make a Request
+## Model Details:
+- **Skin Type Classification**: The model classifies skin types as Oily, Dry, or Normal using a ResNet model.
+- **Concern Classification**: The model classifies a set of skin concerns (e.g., Acne, Redness) from the uploaded image.
+- **Product Recommendation**: The recommendation system takes skin type, concerns, and ingredient data to provide personalized product suggestions based on cosine similarity.
 
-Use the following format to get recommendations:
+## Images:
+### Workflow Diagram:
+![Workflow Diagram](https://github.com/user-attachments/assets/5d8c0dc6-108c-4ae8-a474-e69b9d388e16)
 
-```bash
-http://127.0.0.1:8000/recommend?product_name=The%20Ordinary%20Squalane%20Cleanser%2050ml
-```
+### Model Details:
+![Model Details](https://github.com/user-attachments/assets/99fba41b-a57b-4e92-868c-dd29526e8631)
 
-## API Endpoints
+---
 
-### `GET /recommend`
-
-- **Description:** Returns recommended products similar to the given product name.
-- **Query Parameter:** `product_name` (string) - The name of the product to search for.
-- **Response:** JSON object containing recommended products.
-
-**Example Response:**
-
-```json
-[
-    {
-        "product_name": "La Roche-Posay Toleriane Dermo-Cleanser 200ml",
-        "cosine_similarity": 0.23094011843204498,
-        "price": "£12.50",
-        "url": "https://www.lookfantastic.com/la-roche-posay-toleriane-dermo-cleanser-200ml/11091885.html"
-    },
-    {
-        "product_name": "ESPA Optimal Skin ProCleanser 100ml",
-        "cosine_similarity": 0.22135944664478302,
-        "price": "£32.00",
-        "url": "https://www.lookfantastic.com/espa-optimal-skin-pro-cleanser/12226523.html"
-    },
-]
-```
+This should make it easy for others to follow the structure and functionality of your project, including the visual flow and model details. Let me know if you'd like any more changes!
