@@ -49,29 +49,6 @@ The Skincare Product Recommendation System is a machine learning-based applicati
   <img src="./assets/result.png" alt="Result Screen"/>
 </p>
 
-## Installation & Setup
-
-### Installation Steps
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/your-repo/skincare-recommendation.git
-   cd skincare-recommendation
-   ```
-
-2. **Install Dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Application**
-
-   ```bash
-   streamlit run app.py
-   ```
-
 ## Contact
 
 For any queries or suggestions, feel free to reach out at [mahmoud.namnam72@gmail.com](mailto:mahmoud.namnam72@gmail.com).
