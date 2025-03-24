@@ -37,16 +37,16 @@ The Skincare Product Recommendation System is a machine learning-based applicati
 ### Demo Screenshots
 
 <p align="center">
-  <img src="./demo.gif" alt="Demo"/>
+  <img src="./assets/demo.gif" alt="Demo"/>
 </p>
 
 
 <p align="center">
-  <img src="./start.png" alt="Start Screen"/>
+  <img src="./assets/start.png" alt="Start Screen"/>
 </p>
 
 <p align="center">
-  <img src="./result.png" alt="Result Screen"/>
+  <img src="./assets/result.png" alt="Result Screen"/>
 </p>
 
 ## Installation & Setup
