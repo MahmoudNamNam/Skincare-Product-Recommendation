@@ -1,36 +1,77 @@
 # Skincare Product Recommendation System
 
-This machine learning-based skincare product recommendation system uses pre-trained models for skin type and concern classification, along with a content-based filtering approach to recommend products based on user inputs.
+## Overview
+The Skincare Product Recommendation System is a machine learning-based application designed to provide personalized skincare recommendations. By leveraging deep learning models for skin analysis and content-based filtering for product matching, this system helps users find the best skincare products tailored to their skin type and concerns.
 
-## Technologies Used:
-- **ResNet-50/101** for skin type and concern prediction.
-- **PyTorch** for model inference.
-- **Streamlit** for the web interface.
-- **Pandas & Scikit-learn** for data processing and recommendation algorithms.
-- **TF-IDF Vectorization** for ingredient-based similarity.
+## Features
+### 1. **Skin Type Prediction**
+- Upload an image of your skin, and the system predicts whether your skin type is **Oily, Dry, or Normal** using a **ResNet-50/101** model.
 
-## Features:
-- **Skin Type Prediction**: Given an image of the user's skin, the model predicts whether the skin is Oily, Dry, or Normal.
-- **Concern Prediction**: The model detects common skin concerns such as Acne, Bags, Redness, etc., from the uploaded skin image.
-- **Product Recommendation**: Based on the predicted skin type and concerns, the system recommends skincare products using a combination of cosine similarity based on skin type, concerns, and ingredients.
+### 2. **Skin Concern Detection**
+- The model identifies common skin concerns such as **Acne, Bags, Redness, Wrinkles**, etc., from the uploaded image.
 
-## App Usage:
-1. Upload an image of your skin.
-2. The app will predict your skin type and concerns.
-3. Based on the predictions, the system will recommend top skincare products with links to more details.
+### 3. **Personalized Product Recommendations**
+- Based on the predicted skin type and concerns, the system suggests the most suitable skincare products using:
+  - **Cosine Similarity** to match products based on skin type and concerns.
+  - **TF-IDF Vectorization** to analyze ingredient-based similarity and provide relevant product recommendations.
 
-## Model Details:
-- **Skin Type Classification**: The model classifies skin types as Oily, Dry, or Normal using a ResNet model.
-- **Concern Classification**: The model classifies a set of skin concerns (e.g., Acne, Redness) from the uploaded image.
-- **Product Recommendation**: The recommendation system takes skin type, concerns, and ingredient data to provide personalized product suggestions based on cosine similarity.
+## Technologies Used
+- **Deep Learning Models:** Pre-trained **ResNet-50/101** for skin classification.
+- **PyTorch:** For model inference and deep learning operations.
+- **Streamlit:** For building an interactive and user-friendly web interface.
+- **Pandas & Scikit-learn:** For data preprocessing and implementing the recommendation algorithm.
+- **TF-IDF Vectorization:** For ingredient-based similarity analysis.
 
-## Images:
-### Workflow Diagram:
+## How It Works
+1. **Upload an Image**: Users upload an image of their skin.
+2. **Model Prediction**: The system classifies skin type and detects concerns.
+3. **Personalized Recommendations**: Using machine learning, the system suggests the best-matching skincare products.
+4. **Explore Products**: Users receive recommendations along with product details and purchase links.
+
+## Application Workflow
+### Workflow Diagram
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5d8c0dc6-108c-4ae8-a474-e69b9d388e16" alt="Workflow Diagram"/>
 </p>
 
-### Model Details:
+### Demo Screenshots
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/99fba41b-a57b-4e92-868c-dd29526e8631" alt="Model Details"/>
+  <img src="./demo.gif" alt="Demo"/>
 </p>
+
+
+<p align="center">
+  <img src="./start.png" alt="Start Screen"/>
+</p>
+
+<p align="center">
+  <img src="./result.png" alt="Result Screen"/>
+</p>
+
+## Installation & Setup
+
+### Installation Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-repo/skincare-recommendation.git
+   cd skincare-recommendation
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+## Contact
+
+For any queries or suggestions, feel free to reach out at [mahmoud.namnam72@gmail.com](mailto:mahmoud.namnam72@gmail.com).
